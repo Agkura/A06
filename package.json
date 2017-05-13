@@ -3,7 +3,8 @@
   "version": "2.1.0",
   "description": "App Academy's Assessment 06",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "webpack": "webpack --watch"
   },
   "keywords": [
     "react",
