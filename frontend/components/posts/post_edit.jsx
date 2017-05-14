@@ -1,5 +1,6 @@
 import React from 'react';
 import * as APIUtil from '../../util/post_util';
+import { Link } from 'react-router-dom';
 
 class PostEdit extends React.Component{
   constructor(props){
@@ -35,11 +36,17 @@ class PostEdit extends React.Component{
     const { id, title, body } = this.state;
     return(
       <div className="modal">
-        <form className="edit-post" onSubmit={this.handleSubmit}>
+        <div className="edit-post">
           <input type="text" value={title} onChange={this.update("title")}></input>
           <input type="text" value={body} onChange={this.update("body")}></input>
-          <input type="submit" value="Update Post"></input>
-        </form>
+
+            <button onClick={this.handleSubmit}>
+              <Link to="/">Update Post</Link>
+            </button>
+            <Link to="/">
+            <button>Cancel</button>
+          </Link>
+        </div>
       </div>
     )
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PostEditContainer from './post_edit_container';
 
 class PostItem extends React.Component{
@@ -19,9 +19,9 @@ class PostItem extends React.Component{
       <li>
         <p>{post.title}</p>
         <button onClick={this.handleDelete}>Delete</button>
-        <Link to={"/posts/" + post.id}>
+        <NavLink to={"/posts/" + post.id} activeClassName="modal-active">
           <button>Edit</button>
-        </Link>
+        </NavLink>
       </li>
     );
   }
