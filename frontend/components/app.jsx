@@ -1,9 +1,9 @@
 import React from 'react';
-import Posts from './posts/posts';
+import PostsContainer from './posts/posts_container';
 
 const App = () => (
   <div>
-    <Posts />
+    <PostsContainer />
   </div>
 )
 

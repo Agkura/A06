@@ -1,4 +1,5 @@
 import React from 'react';
+import PostItem from './post_item';
 
 class Posts extends React.Component{
   constructor(props){
@@ -10,11 +11,8 @@ class Posts extends React.Component{
   }
 
   render(){
-    debugger;
-    let allPosts = Object.keys(this.props.posts).map( key => (
-      <li>
-        <p>{this.props.posts[key].title}</p>
-      </li>
+    let allPosts = Object.keys(this.props.posts).map( (key, idx) => (
+      <PostItem key={idx} deletePost={this.props.deletePost} post={this.props.posts[key]} />
     ))
     return(
       <ul>
