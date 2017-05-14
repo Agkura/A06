@@ -12,10 +12,13 @@ class Posts extends React.Component{
 
   render(){
     let allPosts = Object.keys(this.props.posts).map( (key, idx) => (
-      <PostItem key={idx} deletePost={this.props.deletePost} post={this.props.posts[key]} />
-    ))
+      <PostItem key={idx} deletePost={this.props.deletePost}
+                post={this.props.posts[key]}
+                updatePost={this.props.updatePost}/>
+            ));
+
     return(
-      <ul>
+      <ul className="post-list">
         {allPosts}
       </ul>
     );

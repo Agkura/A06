@@ -1,3 +1,20 @@
 // Place all the styles related to the api/posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+form > input, textarea{
+  margin: 5px;
+}
+
+.submit-post {
+  width: 50%;
+  margin: 0 auto;
+}

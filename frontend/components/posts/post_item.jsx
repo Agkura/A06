@@ -6,9 +6,10 @@ class PostItem extends React.Component{
     this.handleDelete = this.handleDelete.bind(this);
   }
 
-  handleDelete(event){
+  handleDelete(e){
     this.props.deletePost(this.props.post.id);
   }
+
 
   render(){
     return(
