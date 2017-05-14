@@ -8,7 +8,7 @@ const App = () => (
   <div className="main">
     <PostsContainer />
     <PostFormContainer />
-    <Route path="/posts/:postId" render={ ({match}) =>
+    <Route path="/posts/:postId/edit" render={ ({match}) =>
         <PostEditContainer match={match}/>
         }/>
   </div>

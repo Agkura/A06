@@ -17,11 +17,15 @@ class PostItem extends React.Component{
     const { post } = this.props
     return(
       <li>
-        <p>{post.title}</p>
-        <button onClick={this.handleDelete}>Delete</button>
-        <NavLink to={"/posts/" + post.id} activeClassName="modal-active">
-          <button>Edit</button>
-        </NavLink>
+        <ul className="post-items">
+          <li><p>{post.title}</p></li>
+          <li><button onClick={this.handleDelete}>Delete</button></li>
+          <li>
+            <NavLink to={"/posts/" + post.id + "/edit"} activeClassName="modal-active">
+              <button>Edit</button>
+            </NavLink>
+          </li>
+        </ul>
       </li>
     );
   }

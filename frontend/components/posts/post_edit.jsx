@@ -37,15 +37,17 @@ class PostEdit extends React.Component{
     return(
       <div className="modal">
         <div className="edit-post">
+          <h3>Edit Post</h3>
           <input type="text" value={title} onChange={this.update("title")}></input>
-          <input type="text" value={body} onChange={this.update("body")}></input>
+          <textarea value={body} onChange={this.update("body")}></textarea>
 
-            <button onClick={this.handleSubmit}>
-              <Link to="/">Update Post</Link>
-            </button>
-            <Link to="/">
+          <button onClick={this.handleSubmit}>
+            <Link to="/">Update Post</Link>
+          </button>
+          <Link to="/">
             <button>Cancel</button>
           </Link>
+
         </div>
       </div>
     )
