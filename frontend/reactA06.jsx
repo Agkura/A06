@@ -9,14 +9,3 @@ document.addEventListener("DOMContentLoaded", ()=>{
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store} />, root);
 });
-
-import { fetchPost, fetchAllPosts, createNewPost, updatePost, deletePost } from './actions/post_actions';
-import { requestPost } from './util/post_util';
-
-window.fetchPost = fetchPost;
-window.fetchAllPosts = fetchAllPosts;
-window.createNewPost = createNewPost;
-window.updatePost = updatePost;
-window.deletePost = deletePost;
-
-window.requestPost = requestPost;

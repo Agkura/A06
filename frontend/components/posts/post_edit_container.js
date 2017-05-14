@@ -8,6 +8,7 @@ const mapStateToProps = ( state, { match} ) => {
     postId: match.params.postId
   });
 }
+
 const dispatchStateToProps = ( dispatch ) => ({
   updatePost: ( post ) => dispatch(updatePost(post)),
   fetchPost: ( id ) => dispatch(fetchPost(id))

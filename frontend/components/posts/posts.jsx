@@ -12,7 +12,6 @@ class Posts extends React.Component{
 
   render(){
     const { posts, deletePost, updatePost } = this.props
-
     let allPosts = Object.keys(posts).map( (key, idx) => (
       <PostItem key={idx}
                 deletePost={deletePost}
@@ -27,8 +26,6 @@ class Posts extends React.Component{
             {allPosts}
           </ul>
         </div>
-
-
     );
   }
 }

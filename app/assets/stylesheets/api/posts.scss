@@ -115,3 +115,29 @@ form input, textarea {
   margin-bottom: 8px;
   font-size: 20px;
 }
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+.show h3{
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.show h5{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.show a {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 3px;
+}
