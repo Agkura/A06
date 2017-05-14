@@ -11,10 +11,13 @@ class Posts extends React.Component{
   }
 
   render(){
-    let allPosts = Object.keys(this.props.posts).map( (key, idx) => (
-      <PostItem key={idx} deletePost={this.props.deletePost}
-                post={this.props.posts[key]}
-                updatePost={this.props.updatePost}/>
+    const { posts, deletePost, updatePost } = this.props
+
+    let allPosts = Object.keys(posts).map( (key, idx) => (
+      <PostItem key={idx}
+                deletePost={deletePost}
+                post={posts[key]}
+                updatePost={updatePost}/>
             ));
 
     return(

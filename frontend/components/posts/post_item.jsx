@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link } from 'react-router-dom';
 
 class PostItem extends React.Component{
   constructor(props){
@@ -12,10 +13,12 @@ class PostItem extends React.Component{
 
 
   render(){
+    const { post } = this.props
     return(
       <li>
-        <p>{this.props.post.title}</p>
+        <p>{post.title}</p>
         <button onClick={this.handleDelete}>Delete</button>
+        <Route path={"/posts/" + this.props.post.id} />
       </li>
     );
   }
