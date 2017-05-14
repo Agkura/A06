@@ -1,5 +1,6 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import PostEditContainer from './post_edit_container';
 
 class PostItem extends React.Component{
   constructor(props){
@@ -18,7 +19,9 @@ class PostItem extends React.Component{
       <li>
         <p>{post.title}</p>
         <button onClick={this.handleDelete}>Delete</button>
-        <Route path={"/posts/" + this.props.post.id} />
+        <Link to={"/posts/" + post.id}>
+          <button>Edit</button>
+        </Link>
       </li>
     );
   }

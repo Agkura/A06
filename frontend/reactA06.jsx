@@ -11,9 +11,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 import { fetchPost, fetchAllPosts, createNewPost, updatePost, deletePost } from './actions/post_actions';
+import { requestPost } from './util/post_util';
 
 window.fetchPost = fetchPost;
 window.fetchAllPosts = fetchAllPosts;
 window.createNewPost = createNewPost;
 window.updatePost = updatePost;
 window.deletePost = deletePost;
+
+window.requestPost = requestPost;

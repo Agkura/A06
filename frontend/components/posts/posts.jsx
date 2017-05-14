@@ -21,9 +21,12 @@ class Posts extends React.Component{
             ));
 
     return(
-      <ul className="post-list">
-        {allPosts}
-      </ul>
+      <div>
+        <ul className="post-list">
+          {allPosts}
+        </ul>
+      </div>
+
     );
   }
 }
