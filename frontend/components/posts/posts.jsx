@@ -16,8 +16,8 @@ class Posts extends React.Component{
       <PostItem key={idx}
                 deletePost={deletePost}
                 post={posts[key]}
-                updatePost={updatePost}/>
-            ));
+                updatePost={updatePost} />
+    ));
 
     return(
         <div className="left">
