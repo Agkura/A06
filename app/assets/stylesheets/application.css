@@ -38,7 +38,7 @@ p {
 .main{
   display: flex;
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 30px;
   right: 30px;
   height: 50%;
@@ -48,6 +48,8 @@ p {
 .left {
   width: 25%;
   margin: 0 auto;
+  border-right: 1px solid grey;
+  padding-right: 200px;
 }
 
 .right {
