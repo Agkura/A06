@@ -13,11 +13,13 @@
   padding: 10px;
   width: 100%;
   border-radius: 5px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .008);
 }
 
 .submit-post {
     text-align: center;
-    background: transparent;
+    background: white;
     cursor: pointer;
 }
 
