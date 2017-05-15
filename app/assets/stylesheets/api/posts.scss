@@ -150,5 +150,13 @@ form input, textarea {
 .index-button:hover {
   color: white;
   background-color: black;
+
+}
+
+.index-button {
   border-radius: 5px;
+  margin: 1px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  background-color: white;
 }
