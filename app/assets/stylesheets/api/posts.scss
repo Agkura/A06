@@ -139,5 +139,10 @@ form input, textarea {
 .show a {
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 3px;
+  padding: 5px;
+}
+
+.show a:hover {
+  color: white;
+  background-color: black;
 }

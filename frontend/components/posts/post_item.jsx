@@ -19,10 +19,10 @@ class PostItem extends React.Component{
       <li>
         <ul className="post-items">
           <li><Link to={"/posts/" + post.id }><p>{post.title}</p></Link></li>
-          <li><button onClick={this.handleDelete}>Delete</button></li>
+          <li><button className="index-button" onClick={this.handleDelete}>Delete</button></li>
           <li>
             <NavLink to={"/posts/" + post.id + "/edit"} activeClassName="modal-active">
-              <button>Edit</button>
+              <button className="index-button">Edit</button>
             </NavLink>
           </li>
         </ul>

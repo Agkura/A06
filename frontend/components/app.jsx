@@ -9,7 +9,7 @@ const App = () => (
   <div className="main">
     <Route exact path="/" component={PostsContainer}/>
     <Route exact path="/" component={PostFormContainer}/>
-    <Route exact path="/posts/:postId" component={PostShowContainer} />
+    <Route path="/posts/:postId" component={PostShowContainer} />
     <Route path="/posts/:postId/edit" render={ ({match}) =>
       <PostEditContainer match={match}/>
     }/>

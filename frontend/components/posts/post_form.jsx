@@ -30,7 +30,7 @@ class PostForm extends React.Component{
         <form className="post-form" onSubmit={this.handleSubmit}>
           <h3>Add New Post</h3>
           <input type="text" placeholder="Title" value={this.state.title} onChange={this.update("title")}></input>
-          <textarea placeholder="body" value={this.state.body} onChange={this.update("body")}></textarea>
+          <textarea placeholder="Body" value={this.state.body} onChange={this.update("body")}></textarea>
           <input className="submit-post" type="submit" value="Create Post"></input>
         </form>
       </div>
