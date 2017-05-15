@@ -66,16 +66,33 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 .edit-post button > a {
   font-family: sans-serif;
   margin: 5px;
+  color: black;
 }
 
 .edit-post button, a {
   margin: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  background-color: white;
 }
+
+.edit-post button:hover{
+  background-color: black;
+  color: white;
+}
+
+.edit-post button > a:hover {
+  color: white;
+}
+
 
 .edit-post > input {
   margin-bottom: 10px;
